@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GeneFixer - Mutation Input</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="form-container">
+    <h2>🧬 GeneFixer - Enter Mutation Details</h2>
+
+    <!-- Error message if any -->
+    {% if error %}
+      <p style="color: red;">Error: {{ error }}</p>
+    {% endif %}
+
+    <form action="/" method="POST">
+      <!-- Gene Name Dropdown -->
+      <label for="gene">Gene Name:</label>
+      <select name="gene" id="gene" required>
+        <option value="TP53">TP53</option>
+        <option value="KRAS">KRAS</option>
+        <option value="EGFR">EGFR</option>
+        <option value="BRCA1">BRCA1</option>
+      </select>
+
+      <!-- Mutation Textarea (Scrollable) -->
+      <label for="mutation">Mutation (HGVS format):</label>
+      <select id="mutation" name="mutation" required>
+        <option value="p.R175H">p.R175H</option>
+        <option value="p.G12D">p.G12D</option>
+        <option value="p.E746_A750del">p.E746_A750del</option>
+        <option value="p.C61G">p.C61G</option>
+      </select>
+
+      <!-- Mutation Type Dropdown -->
+      <label for="mutation_type">Mutation Type:</label>
+      <select name="mutation_type" id="mutation_type" required>
+        <option value="Missense">Missense</option>
+        <option value="Nonsense">Nonsense</option>
+        <option value="Insertion">Insertion</option>
+        <option value="Deletion">Deletion</option>
+      </select>
+
+      <!-- Submit Button -->
+      <button type="submit">🧪 Analyze Mutation</button>
+    </form>
+  </div>
+</body>
+</html>

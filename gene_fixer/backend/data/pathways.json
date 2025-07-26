@@ -1,0 +1,35 @@
+{
+    "TP53": {
+      "pathways": [
+        "Cell Cycle Regulation",
+        "Apoptosis",
+        "DNA Repair",
+        "Tumor Suppression"
+      ]
+    },
+    "KRAS": {
+      "pathways": [
+        "RAS-MAPK Signaling",
+        "Cell Proliferation",
+        "Apoptosis Regulation",
+        "Cytoskeletal Organization"
+      ]
+    },
+    "EGFR": {
+      "pathways": [
+        "EGFR Signaling Pathway",
+        "Cell Growth",
+        "Proliferation",
+        "Apoptosis",
+        "Cell Migration"
+      ]
+    },
+    "BRCA1": {
+      "pathways": [
+        "DNA Repair",
+        "Cell Cycle Checkpoint",
+        "Homologous Recombination"
+      ]
+    }
+  }
+  
